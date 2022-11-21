@@ -1,0 +1,29 @@
+{% extends 'account/base.html' %}
+<!--  -->
+<!--  -->
+<!--  -->
+
+{% block contents %}
+<!--  -->
+<form action="" method="post">
+  {% csrf_token %}
+  <div>
+    <label for="first_name">First Name</label>
+    <input id="first_name" type="text" />
+  </div>
+  <div>
+    <label for="last_name">Last Name</label>
+    <input id="last_name" type="text" />
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input id="email" type="email" />
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input id="password" type="password" />
+  </div>
+  <button type="submit">Login</button>
+</form>
+<!--  -->
+{% endblock contents %}
